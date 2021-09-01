@@ -1,0 +1,9 @@
+.idea
+.vscode
+
+dist
+/build/
+node_modules
+
+src/.DS_Store
+.DS_Store

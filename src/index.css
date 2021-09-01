@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import "../components/playgame/playGame.css";
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+.containercards,
+.trainContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardImage,
+.imgAvatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.sectionClass,
+.flip-card {
+    width: 280px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.usedCard {
+    opacity: 0.2;
+}
+
+.translationClass {
+    font-family: 'Oswald', sans-serif;
+}
+
+.playButtonClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: black 1px solid;
+    height: 50px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    margin: 20px 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Jomhuria', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.playButtonClass:hover {
+    color: #0d2461;
+    border-color: #DDDDDD;
+}
+
+.playButtonClass:active {
+    color: #BBBBBB;
+    border-color: #BBBBBB;
+}
+
+.playButtonRepeatClass {
+    display: inline-block;
+    padding: 0.5em 5em;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #6b791e;
+    text-align: center;
+    transition: all 0.15s;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.errorCounter {
+    font-size: 3rem;
+    margin: 10px;
+    font-family: 'Jomhuria', cursive;
+}
+
+.span {
+    background-image: url("../src/data/img/newgame.png");
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+}
+
+.playButtonClassWin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: black 1px solid;
+    height: 50px;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    margin: 20px 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.winMessage {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2rem;
+    margin-top: 100px;
+}
+
+.winImage {
+    background-image: url("https://media.giphy.com/media/3oEduLiXJfAh0ynigM/giphy.gif");
+    height: 200px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.trainLink:hover,
+.gameLink:hover {
+    width: 255px;
+    height: 360px;
+    transition: 0.5s;
+    opacity: 1;
+    border: 2px solid #60aaf6;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    transition: 1s;
+}
+
+.gameLink {
+    background-image: url("../src/data/img/game.jpeg");
+    background-size: cover;
+}
+
+.trainLink {
+    background-image: url("../src/data/img/train.jpeg");
+    background-size: cover;
+}
+
+.trainLink,
+.gameLink {
+    transition: 1s;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    width: 225px;
+    height: 320px;
+    border-radius: 3%;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.menuContainer {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuContainer h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.linksContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+    perspective: 1000px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    color: rgb(17, 15, 15);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backButton {
+    background-image: url("./data/img/backbuttom.jpg");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.english:hover,
+.german:hover {
+    width: 255px;
+    height: 360px;
+    transition: 0.5s;
+    opacity: 1;
+    border: 2px solid #60aaf6;
+    font-size: 30px;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    transition: 1s;
+}
+
+.german {
+    background-image: url("../src/data/img/ger.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.english {
+    background-image: url("../src/data/img/british.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.english,
+.german {
+    transition: 1s;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    width: 225px;
+    height: 320px;
+    border-radius: 3%;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
